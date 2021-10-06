@@ -1,0 +1,142 @@
+.rounded, .box-shadow, .txt-shadow, .word-wrap-box{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+/* ---------------------------- BORDES REDONDEADOS ---------------------------- */
+
+.rounded-1, .rounded-2, .rounded-3{     
+    border-radius: 14px;
+    border:1px solid green;
+    width:150px;
+    padding:15px;
+    text-align: center;
+}
+.rounded-2, .rounded-3{                 
+    background-color: green;         /* Para pintarlo por dentro */
+    color: white;
+}
+.rounded-3{
+    border-radius: 0 0 20px 20px;      /* Para modificar cada borde */
+}
+.rounded-4{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: greenyellow;
+}
+
+/* ---------------------------- SOMBRAS DE OBJETOS ---------------------------- */
+
+.box-shadow-1, .box-shadow-2, .box-shadow-3, .box-shadow-4, .box-shadow-5, .box-shadow-6{
+    width: 125px;
+    height: 75px;
+    background-color: tomato;
+    box-shadow: 10px 10px #888888;
+}
+.box-shadow-2{
+    box-shadow: 10px 10px 5px 5px #888888;     /*  horizontal, vertical, desenfoque, tamaño  */
+}
+.box-shadow-3{
+    box-shadow: -10px -10px 5px -5px #888888;  /* tambien se admiten valores negativos (excepto para el desenfoque) */
+}
+.box-shadow-4{
+    background-color: thistle;
+    box-shadow: inset 10px 10px 10px #444444;
+}
+.box-shadow-5{
+    background-color: thistle;
+    box-shadow: inset 10px 10px 10px #444444,  /* sombras multiples */
+                inset -10px -10px 10px orange;
+}
+.box-shadow-6{
+    background-color: white;
+    box-shadow: 0 0 10px 4px red,              /* sombras multiples */
+                0 0 10px 20px sandybrown,
+                30px 0 20px 30px skyblue;
+}
+
+/* ----------------------------- SOMBRAS DE TEXTO ----------------------------- */
+
+.txt-shadow-1{
+    text-shadow: 0 5px 3px #777777;
+}
+.txt-shadow-2{
+    text-shadow: -5px -5px 4px tomato, 
+                 5px 5px 4px skyblue;
+}
+
+/* ------------------------------ TRANSPARENCIA ------------------------------- */
+
+.transparency-box{
+    background-color: skyblue;
+}
+.nav-bar{
+    padding: 40px 0;
+    min-width: 500px;
+    text-align: center;
+}
+.nav-bar ul{
+    background: linear-gradient(90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.2) 25%,
+                rgba(255, 255, 255, 0.2) 75%,
+                rgba(255, 255, 255, 0) 100%,);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+                inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+.nav-bar ul li{
+    display: inline-block;
+}
+.nav-bar ul li a{
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    display: block;
+}
+.nav-bar ul li a:hover{
+    color: #666666;
+}
+
+/* ----------------------------- PSEUDO CLASSES ------------------------------- */
+#parent p:first-child{
+    color: green;
+    text-decoration: underline;
+}
+#parent p:last-child{
+    color: indianred;
+    text-decoration: underline;
+}
+
+/* ----------------------------- PSEUDO ELEMENTS ------------------------------ */
+/*
+::first-line   - the first line of the text in a selector
+::first-letter - the first letter of the text in a selector
+::selection    - selects the portion of an element that is selected by a user
+::before       - inserts some content before an element
+::after        - inserts some content after an element
+*/
+
+.pseudo-elements-box .p1::first-line{
+    color: green;
+}
+.pseudo-elements-box .p2::selection{
+    background: greenyellow;
+    color: honeydew;
+}
+
+/* -------------------------------- WORD WRAP --------------------------------- */
+.word-wrap-box .p1{
+    width: 210px; 
+    height: 100px;
+    border: 1px solid #000000;
+    word-wrap: normal;
+}
+.word-wrap-box .p2{
+    width: 210px; 
+    height: 100px;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}

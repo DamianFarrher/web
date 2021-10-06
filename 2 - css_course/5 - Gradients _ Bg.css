@@ -1,0 +1,123 @@
+.linear-gradient-box, .radial-gradient-box, .bg-size-box, .bg-clip-box, .multiple-bg-img-box, .opacity-box{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+/* -------------------- GRADIENTE LINEAR -------------------- */
+.linear-gradient-box div{
+    text-align: center;
+    padding: 50px;
+    width: 100px;
+    margin: 4px;
+    color: white;
+    background: linear-gradient(DeepSkyBlue, Black);
+}
+.linear-gradient-box .div2{
+    color: black;
+    background: linear-gradient(red, orange, yellow, yellowgreen, DeepSkyBlue, blue, purple);
+}
+.linear-gradient-box .div3{
+    background: linear-gradient(blue 20%, green 30%, yellow 90%);
+}
+.linear-gradient-box .div4{
+    background: linear-gradient(120deg, blue, green, white);
+}
+.linear-gradient-box .div5{
+    color: black;
+    background: repeating-linear-gradient(orange, yellowgreen 20px);
+}
+
+/* -------------------- GRADIENTE LINEAR -------------------- */
+.radial-gradient-box div{
+    text-align: center;
+    padding: 50px;
+    width: 100px;
+    margin: 4px;
+    color: white;
+    background: radial-gradient(green, yellow, purple);  /* (position, shape or size, color-stops) */
+} 
+.radial-gradient-box .div2{
+    background: radial-gradient(circle, green, yellow, purple); 
+}
+.radial-gradient-box .div3{
+    background: radial-gradient(black 5%, blue 15%, yellowgreen 60%); 
+}
+
+/* -------------------- BACKGROUND SIZE --------------------- */
+.bg-size-box .div1, .bg-size-box .div2, .bg-size-box .div3{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png") no-repeat 50% 50%;
+    background-size: 75px 100px;
+}
+.bg-size-box .div2, .bg-size-box .div3{
+    background: url("https://www.pngitem.com/pimgs/m/476-4768356_html-css-javascript-logo-clipart-png-download-html.png") no-repeat 50% 50%;
+    background-size: contain;
+}
+.bg-size-box .div3{
+    background-size: cover;
+}
+
+/* -------------------- BACKGROUND CLIP --------------------- */
+.bg-clip-box .div1, .bg-clip-box .div2, .bg-clip-box .div3{
+    border: 2px dotted black;
+    padding: 20px;
+    background: lightblue;
+    background-clip: padding-box;
+}
+.bg-clip-box .div2, .bg-clip-box .div3{
+    background-clip: content-box;
+}
+
+/*
+Tambien se puede agregar imagenes:
+
+div {
+   background-image: url("css-logo.png");
+   background-clip: content-box;
+}
+
+*/
+
+/* ------------------- BORDE TRANSPARENTE ------------------- */
+.transparent-borders-box{
+    padding-left: 25%;
+    width: 50%;
+}
+.transparent-borders-box div{
+    border: 20px solid rgba(0, 0, 0, 0.5);
+    background-clip: padding-box; 
+
+    background-color: beige;
+    width:200px;
+    padding: 5px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+/* ---------------- IMAGEN DE FONDO MULTIPLE ---------------- */
+.multiple-bg-img-box div{
+    width: 486px;
+    height: 355px;
+    background-image:url('css-logo.jpg'), url('https://media.istockphoto.com/photos/splitting-of-css-and-php-code-computer-script-codesoftware-code-in-picture-id1083998714?k=6&m=1083998714&s=170667a&w=0&h=2lQnX3Rpg93cWwAFyPU-Jz8B1lHTQ0BhgU0ZRAXU39o=');
+    background-position: right bottom, center;
+    
+    background-repeat: no-repeat;
+}
+
+/* ------------------------ OPACIDAD ------------------------ */
+.opacity-box{ 
+    margin-bottom: 200px; 
+}
+.opacity-box img{
+    width: 75px;
+    height: 100px;
+}
+#img1{ opacity: 1; }
+#img2{ opacity: 0.5; }
+#img3{ opacity: 0.1; }

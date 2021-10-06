@@ -1,0 +1,69 @@
+/* ESCONDER UN ELEMENTO
+
+visibility: hidden
+
+lo esconde pero sigue estando el espacio que ocupa ese elemento
+en cambio este metodo lo borra directamente:
+*/
+span { display: block; }
+/* 
+    tambien puede usrse el metodo 'display' para:
+    list-item, table, table-cell, table-column, grid 
+*/
+
+/* ----------------------------------------------------------------- */
+
+p.position_static {
+   position:static;
+   top: 30px;
+   right: 5px;
+   color: red;
+}
+
+p.position_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    color: red;
+}
+
+/*
+position: relative;
+- es para cambiar su posicion acorde al parrafo que lo contiene
+- los valores que toma son
+top: 0px;
+left: 0px;
+*/
+
+/* ----------------------------------------------------------------- */
+
+/*
+img { float: right; }
+- esto permite posicionar una imagen en cierto lugar y que el texto se acomode
+al igual que la funcion de 'estrecho' en word
+*/
+
+/* ----------------------------------------------------------------- */
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+    overflow: auto;
+}
+/* 
+los valores para overflow son:
+visible, hidden, scroll, auto
+y es dar una opcion al texto que no entre en su contenedor
+ */
+
+/* ----------------------------------------------------------------- */
+
+/*
+si dos elementos se supeponen usar...
+
+z-index: 0;
+
+...para decidir cual va arriba y cual abajo
+*/

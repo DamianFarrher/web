@@ -1,0 +1,119 @@
+body{
+    background-color: white;
+}
+/*
+PARA PONER UNA IMAGEN: 
+background-image: url("css_logo.png");
+
+PARA REPETIR LA IMAGEN SOBRE UN EJE:
+background-repeat: repeat-x; 
+background-repeat: repeat-y; 
+
+PARA FIJAR O NO LA IMAGEN:
+background-attachment: fixed;    (al bajar el contenido, la imagen se queda quieta en la pantalla)
+background-attachment: scroll;   (al bajar el contenido, la imagen baja con él)
+*/
+
+/* --------------------------------------------------------------------------- */
+
+p.solid-border { 
+    padding: 10px;    
+    border: 5px solid green;
+}
+
+p.none {border-style: none;}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.hidden {border-style: hidden;}
+
+/* 
+In CSS, it is possible to specify different borders for different sides, 
+using the following properties: 
+    border-top-style, 
+    border-right-style, 
+    border-bottom-style, 
+    border-left-style 
+for the corresponding sides. 
+*/
+
+/* --------------------------------------------------------------------------- */
+
+div.border-1 {
+    border: 5px solid blue;    
+    width: 90px;
+    height: 90px;
+}
+div.border-2 {
+    border: 5px solid green;    
+    width: 75%;
+    height: 90px;
+}
+/*
+min-width - the minimum width of an element
+min-height - the minimum height of an element
+max-width - the maximum width of an element
+max-height - the maximum height of an element
+*/
+
+/* --------------------------------------------------------------------------- */
+
+ol.lower-alpha { list-style-type: lower-alpha; }
+ul.circle      { list-style-type: circle;      }
+ul.square      { list-style-type: square;      }
+
+/*
+tambien se puede fijar una imagen:
+ul {
+   list-style-image: url("logo.jpg");
+   list-style-position: inside;
+}
+*/
+
+/* --------------------------------------------------------------------------- */
+
+
+table.t-one {
+    border-collapse: separate;
+    border-spacing: 20px 40px;
+}
+
+caption { caption-side: top; }
+
+table.t-three {
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+/*
+AJUSTAR CONTENIDO
+table-layout: auto;
+table-layout: fixed;
+*/
+
+/* --------------------------------------------------------------------------- */
+a:link{
+    color: violet;
+}
+
+a:visited{
+    color: tomato;
+}
+
+a:hover { 
+    color: blue; 
+    text-decoration: none;
+}
+
+/*
+ORDEN PARA MODIFICAR LINKS
+a:link
+a:visited
+a:hover
+a:active
+*/
+

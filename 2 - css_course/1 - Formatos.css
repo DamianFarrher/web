@@ -1,0 +1,135 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
+    'Trebuchet MS', sans-serif;
+}
+
+.first{ color: red; }
+
+#intro em{
+    color:white;
+    background-color: yellowgreen
+}
+
+/*---------------------------------------------------*/
+
+p.serif     { font-family: "Times New Roman", Times, serif;   }
+p.sansserif { font-family: Helvetica, Arial, sans-serif;      }
+p.monospace { font-family: "Courier New", Courier, monospace; }
+p.cursive   { font-family: Florence, cursive;                 }
+p.fantasy   { font-family: Blippo, fantasy;                   }
+
+/*---------------------------------------------------*/
+
+p.small  { font-size: small;   }
+p.medium { font-size: medium;  }
+p.large  { font-size: large;   }
+p.xlarge { font-size: x-large; }
+
+/* OTRAS FORMAS DE ESTABLECER EL TAMAÑO DE FUENTE:
+
+h1 { font-size: 20px;   }
+h1 { font-size: 1.25em; }                       */
+
+/*---------------------------------------------------*/
+
+p.normal  { font-style: normal;  }
+p.italic  { font-style: italic;  }
+p.oblique { font-style: oblique; }
+/* El tag <i> en HTML genera el mismo resultado */
+
+/*---------------------------------------------------*/
+
+p.light   { font-weight: lighter; }
+p.bold    { font-weight: bold;    }
+p.bolder  { font-weight: bolder;  }
+p.thicker { font-weight: 700;     }
+/* El tag <strong> en HTML transforma el texto en negrita */
+
+/*---------------------------------------------------*/
+
+p.normal { font-variant: normal;     }
+p.small  { font-variant: small-caps; }
+/* No todas las fuentes soportan esta opción */
+
+/*---------------------------------------------------*/
+
+p.hexadecimal { color: #0000FF; }
+p.rgb { color: rgb(255,0,0); }
+
+/*---------------------------------------------------*/
+
+p.left   { text-align: left;   }
+p.center { text-align: center; }
+p.right  { text-align: right;  }
+
+/*---------------------------------------------------*/
+
+td.top    { vertical-align: top;    }
+td.middle { vertical-align: middle; }
+td.bottom { vertical-align: bottom; }
+
+/*---------------------------------------------------*/
+
+span.baseline { vertical-align: baseline; }
+span.sub      { vertical-align: sub;      }
+span.super    { vertical-align: super;    }
+span.pixel    { vertical-align: -10px;    }
+/*  En vez de px se puede usar: pt, cm, %  */ 
+
+/*---------------------------------------------------*/
+
+.main {
+    height: 150px; width: 400px;
+    background-color: LightSkyBlue;
+    display: inline-table;
+}
+.paragraph {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*---------------------------------------------------*/
+
+p.none         { text-decoration: none;         }
+p.inherit      { text-decoration: inherit;      }
+p.overline     { text-decoration: overline;     }
+p.underline    { text-decoration: underline;    }
+p.line-through { text-decoration: line-through; }
+
+/*---------------------------------------------------*/
+
+p.indent { text-indent: 50px; }
+
+/*---------------------------------------------------*/
+
+h2.shadow {    
+    color: red;
+    font-size: 30pt;
+    text-shadow: 1px 3px 4px gray; 
+}
+h2.blur {
+    font-size: 25pt;   
+    text-shadow: rgba(0,0,255,1) 0px 0px 0.5em; 
+}
+
+/*---------------------------------------------------*/
+
+p.capitalize { text-transform: capitalize; }
+p.uppercase  { text-transform: uppercase;  }
+p.lowercase  { text-transform: lowercase;  }
+
+/*---------------------------------------------------*/
+
+p.positive { letter-spacing: 4px;    }
+p.negative { letter-spacing: -1.5px; }
+p.px       { word-spacing: 30px;     }
+p.wnegative { word-spacing: -5px;     }
+
+/*---------------------------------------------------*/
+
+p.nowrap { white-space: nowrap; }
+
+p.pre     { white-space: pre;      }
+p.preline { white-space: pre-line; }
+p.prewrap { white-space: pre-wrap; }
