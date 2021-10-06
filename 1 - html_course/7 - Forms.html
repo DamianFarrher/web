@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <label>Username:</label>
+        <input id="user" name="username" type="text" />
+
+        <br>
+
+        <label for="email">Your e-mail address: </label> 
+        <input type="text" name="email" placeholder="example@email.com" />
+        
+        <br>
+
+        <label for="email">Your e-mail address: </label> 
+        <input type="text" name="email" autofocus/>
+    </form>
+
+    <br><br>
+
+    <form autocomplete="off">
+        <label for="e-mail">Your e-mail address: </label>
+        <input name="Email" type="text" required />
+        <input type="submit" value="Submit"/>
+    </form>
+
+    <br><br>
+
+    <form>
+        <input id="mysearch" name="searchitem" type="search" />
+
+        <br><br>
+
+        <input id="car" type="text" list="colors" />
+        <datalist id="colors">
+            <option value="Red">
+            <option value="Green">
+            <option value="Yellow">
+        </datalist>
+    </form>
+
+    <br><br>
+
+    <form>
+        <input id="email" name="email" type="email" placeholder="example@email.com" />
+        <br />
+        <input id="url" name="url" type="url" placeholder="example-url.com" />
+        <br />
+        <input id="tel" name="tel" type="tel" placeholder="123.456.7890" />
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body>
+    
+    <svg width="2000" height="2000">
+        <circle cx="80" cy="80" r="50" fill="red" stroke="black"/>
+        
+        <rect width="250" height="100" x="200" y="30" fill="blue">
+        <animate attributeName="x" from="200" to="350"
+        dur="3s" fill="freeze" repeatCount="2"/> 
+        <animate attributeName="width" from="250" to="100"
+        dur="3s" fill="freeze" repeatCount="1"/> 
+        </rect>
+        
+        <line x1="20" y1="200" x2="300" y2="250" 
+        style="stroke:#000000; stroke-linecap:round; 
+        stroke-width:10"  />
+
+        <polyline style="stroke-linejoin:miter; stroke:black; 
+        stroke-width:5; fill: yellowgreen;"
+        points="100 350, 150 400, 200 350, 300 450" />
+
+        <polyline style="stroke-linejoin:miter; stroke:black; 
+        stroke-width:10; fill: rgb(255, 159, 33);"
+        points="100 550, 150 600, 200 550, 200 650, 150 700, 100 650, 100 550, 150 600" />
+    
+        <ellipse cx="500" cy="300" rx="100" ry="50" style="fill:green" />
+    
+        <polygon points="600 500, 400 500, 450 400" 
+        style="fill: yellow; stroke:black;" />
+    </svg>
+
+</body>
+</html>

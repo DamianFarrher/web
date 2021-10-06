@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>First Page</title>
+    </head>
+    <body>
+        <!-- BASICO ------------------------------------------------->
+        <p>This is a parragraph</p>
+        <p>This is another parragraph</p>
+        <p>This is <br> a line break</p> <!--  o tambien <br />  -->
+
+
+
+        <hr> <!--  o tambien <hr />  -------------------------------->
+        <!-- FORMATO -->
+        This is regular text                <br> 
+        <b> bold text </b>                  <br>
+        <big> big text </big>               <br>
+        <i> italic text </i>                <br>
+        <small> small text </small>         <br>
+        <strong> strong text </strong>      <br>
+        <sub> subscripted text </sub>       <br>
+        <sup> superscripted text </sup>     <br>
+        <ins> inserted text </ins>          <br>
+        <del> deleted text </del>           <br>
+
+
+
+        <hr>
+        <!-- HEADING ------------------------------------------------>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+
+
+
+        <hr>
+        <!-- ALINEAR / AJUSTAR -------------------------------------->
+        <p align="center"> This text is aligned to center </p>
+
+        <hr width="50px" />
+        <hr width="50%" />
+
+
+
+        <hr>
+        <!-- LINKS -->
+        <a href="https://www.google.com/" >Open Google</a> 
+        <br>
+        <a href="https://www.google.com/" target="_blank">Open Google in a new tab</a>
+
+
+
+        <hr>
+        <!-- LISTAS ------------------------------------------------->
+
+        <ul> <!-- unordered list -->
+            <li>Red</li>
+            <li>Blue</li>
+            <li>Green</li>
+        </ul>
+ 
+        <ol> <!-- ordered list -->
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+
+
+   
+        <hr>
+        <!-- TABLAS ------------------------------------------------->
+         <table border="2">
+            <tr>
+               <td bgcolor="red">Red</td>
+               <td>Blue</td>
+               <td>Green</td>
+            </tr>
+            <tr>
+               <td>Yellow</td>
+               <td colspan="2">Orange</td>
+            </tr>
+        </table>
+
+
+        <h1><span>My Coding Schedule</span></h1>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>8-8:30</td>
+                <td class="selected">Learn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9-10</td>
+                <td></td>
+                <td class="selected">Practice</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1-1:30</td>
+                <td></td>
+                <td></td>
+                <td class="selected">Play</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3:45-5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="selected">Code</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6-6:15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="selected">Discuss</td>
+            </tr>
+        </table>
+
+
+
+        <hr>
+        <!-- DIVISIONES Y ESTILOS ----------------------------------->
+        <h1>Headline</h1>
+        <div style="background-color:green; color:white; padding:20px;">
+            <p>Some paragraph text goes here.</p>
+            <p>Another paragraph goes here.</p>
+        </div>
+
+        <h2>Some 
+        <span style="color:red">Important</span>
+        Message</h2>
+
+
+        
+        <!-- OTROS TIPOS DE ELEMENTOS --------------------------------
+        <applet></applet>                   embedded Java applet
+        <inframe></inframe>                 Inline frame
+        <ins></ins>                         inserted text
+        <map name=""></map>                 image map
+        <object data="" type=""></object>   embedded object
+        <script></script>                   script within an HTML document
+        -->
+
+
+
+        <!-- FORM --------------------------------------------------->
+        <hr>
+        <form action="">
+            <input type="radio" name="gender" value="male" /> Male          <br>
+            <input type="radio" name="gender" value="female" /> Female      <br>
+
+            <input type="checkbox" name="options" value="1" /> Option 1     <br>
+            <input type="checkbox" name="options" value="2" /> Option 2     <br> 
+
+            <br>
+            
+            <input type="text" name="username" />                           <br>
+            <input type="password" name="password" />                       <br>
+            <input type="submit" value="Sign in" /> <!-- * -->               <br>
+        </form>
+
+        
+        <!-- *submit: envia la informacion y esta se procesa segun
+                      la accion especificada en 'form'-->
+        
+        <h3><span>Contact Me</span></h3>
+        <form>
+            <input name="name" type="text" /><br/>
+            <input name="email" type="email" /><br/>
+            <textarea name="message"></textarea>
+            <input type="submit" value="SEND" class="submit" />
+        </form>
+        
+        
+        
+        <!-- COLORES -------------------------------------------------
+        se usa la escala RGB 
+        0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+        FF0000 = red   | 00FF00 = green | 0000FF = blue
+        FFFFFF = white | 000000 = black | 777777 = gray
+
+
+        EJEMPLO:
+
+        <html>
+            <head> 
+                <title>first page</title>  
+            </head>
+            <body bgcolor="#000099">  //color de fondo de la pagina
+                <h1>
+                    <font color="#FFFFFF"> White headline </font>
+                                      //color de la letra
+                </h1> 
+            </body>
+        </html>
+        -->
+
+
+
+        <!-- MULTIMEDIA --------------------------------------------->
+
+        <hr>
+        <!-- IMAGENES -->
+        <img src="tree.jpg" height="150px" width="150px" border="5px" alt="" />
+        <img src="tree.jpg" height="25%" width="25%" alt="" /> 
+
+        <!-- VIDEOS -->
+        <div class="section">
+            <h1><span>My Media</span></h1>
+            <iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        no todos los buscadores soportan el primer tipo de archivo, 
+        prueba el primero y sino el segundo 
+        si no logra reproducir ninguno muestra el mensaje
+
+        se puede agregar o quitar estos ajustes: 
+        'controls' 'autoplay' 'loop' 
+    -->
+
+    <audio controls> 
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Audio element not supported by your browser. 
+    </audio>
+
+
+    <p></p>
+
+
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Video is not supported by your browser
+    </video>
+
+    <p></p>
+
+
+    Status: 
+    <progress min="0" max="100" value="35" >
+    </progress>
+
+
+</body>
+</html>
