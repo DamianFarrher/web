@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*::selection{
+    background: #bbbbbb;
+}
+
+input::placeholder{
+    color: #aaaaaa;
+}
+
+
+/*---------------------------- HEADER ----------------------------*/
+
+
+header{
+    height: 150px;
+}
+
+/*--------------------- PARTE SUPERIOR (LOGO, SESIÓN, BÚSQUEDA) */
+
+header section{
+    height: 75px;
+}
+
+#h-logo{
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    width: 80px;
+    padding: 19px 55px;
+    transition: 0.1s;
+}
+#h-logo:hover{
+    transform: scale(0.9);
+}
+
+#btn1{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: -64px;
+    margin-right: 20px;
+
+    float: right;
+    border-radius: 10px;
+    border: 3px solid #eeeeee;
+    cursor: pointer;
+    
+    padding: 15px 20px;
+    transition: 0.2s;    
+}
+
+#btn1:hover{
+    margin-top: -69px;
+    margin-right: 25px;
+    box-shadow: 5px 5px 0 0 #777777;
+}
+
+#btn2{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: -64px;
+    margin-right: 140px;
+
+    float: right;
+    background: #eeeeee;
+    border-radius: 10px;
+    border: 3px solid #eeeeee;
+    cursor: pointer;
+    
+    padding: 15px 20px;
+    transition: 0.2s;    
+}
+
+#btn2:hover{    
+    margin-top: -69px;
+    margin-right: 145px;
+    box-shadow: 5px 5px 0 0 #777777;
+}
+
+
+#h-busc{
+    cursor: pointer;
+    float: right;
+    margin-top: -59px;
+    margin-right: 310px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 0;
+    
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+    background: #eeeeee;
+    font-size: 1em;
+
+    background-image: url(img/lupa.png);
+    background-size: 20px;
+    background-position-x: 9px;
+    background-position-y: 9px;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+}
+
+#h-busc:hover, #h-busc:focus{
+    box-shadow: 5px 5px 0 0 #777777;
+    margin-top: -64px;
+    margin-right: 315px;
+}
+#h-busc:focus{
+    cursor: text;
+    padding-left: 10px;
+    background-image: none;
+    width: 300px;
+}
+
+
+/*--------------------- NAV (SERVICIOS) */
+
+header nav{
+    font-weight: bold;
+    height: 20px;
+    padding: 30px 45px;
+}
+
+header nav img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40px;
+    height: 40px;
+}
+
+header nav a{
+    float: left;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+header nav a:hover{
+    margin-top: -5px;
+    margin-right: 15px;
+    margin-left: -5px;
+    box-shadow: 5px 5px 0 0 #777777, 5px 5px 20px 0 #eeeeee;
+}
+
+
+/*---------------------------- SECCIÓN BUSCAR SERVICIOS ----------------------------*/
+
+#buscar{
+    border-radius: 30px;
+    padding: 50px 100px;
+    height: 300px;
+    width: 75%;
+    margin: 100px auto;
+    transition: 0.5s;
+}
+#buscar:hover{
+    box-shadow: 0 0 30px 0 #eeeeee;
+
+}
+
+#buscar h1{
+    font-size: 2em;
+    line-height: 2em;
+}
+#buscar h3{
+    line-height: 0em;
+    padding-left: 5px;
+}
+
+#buscar input{
+    clear: both;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    border-radius: 10px;
+    border: 2px solid #eeeeee;
+    background: #eeeeee;
+    font-size: 1em;
+    transition: 0.2s;
+}
+#buscar input:hover, #buscar input:focus{
+    border: 2px solid #aaaaaa;
+}
+
+#destino{width: 80%;}
+#fecha1{width: 40%;}
+#fecha2{width: 40%;}
+#personas{width: 60%;}
+
+#buscar div{
+    float: left;
+    width: 50%;
+}
+
+#btn-buscar{
+    cursor: pointer;
+    float: right;
+    padding: 20px;
+    margin: -7px -15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0;
+    transition: 0.2s;
+}
+#btn-buscar:hover{
+    margin: -12px -10px;
+    box-shadow: 5px 5px 0 0 #777777;
+}
+
+
+
+/*---------------------------- TARJETAS DESTINOS ----------------------------*/
+
+#tarjetas-container{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    cursor: default;
+    width: 30%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.tarjeta:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.15);
+}
+.tarjeta:hover .imagen{
+    transform: scale(1.1) translate(0, -10px);
+}
+
+/*--------------------- IMAGEN */
+
+#caribe{background: url(img/caribe.jpg);}
+#ny{background: url(img/ny.jpg);}
+#londres{background: url(img/londres.jpg);}
+
+#caribe, #ny, #londres{
+    width: 100%;
+    height: 200px;
+    background-position: center;background-size: cover;
+    transition: 0.5s;
+}
+
+/*--------------------- TEXTO */
+
+.tarjeta .texto{
+    margin: 20px;
+}
+.tarjeta h3{
+    font-size: 1.5em;
+}
+
+/*--------------------- BOTON */
+
+.tarjeta a{
+    float: right;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background: #eeeeee;
+    transition: 0.2s;
+}
+.tarjeta a:hover{
+    margin-top: 15px;
+    margin-right: 5px;
+    box-shadow: 5px 5px 0 0 #777777;
+}
+
+
+
+
+
+/*---------------------------- FOOTER ----------------------------*/
+
+footer{
+    margin-top: 500px;
+    padding: 100px 10%;
+    padding-bottom: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    box-shadow: 0 0 30px 0 #eeeeee;
+    transition: 0.3s;
+}
+
+footer:hover{
+    box-shadow: 0 0 70px 0 #eeeeee;
+}
+
+#f-left{
+    width: 40%;
+}
+#f-right{
+    text-align: right;
+    width: 40%;
+}
+
+footer h1{
+    font-size: 2.5em;
+}
+
+footer a{
+    color: rgb(0, 0, 141);
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(0, 0, 141);
+    text-decoration: underline;
+}
+

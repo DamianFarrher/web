@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    font-family: Calibri Light;
+    color: #444444;
+    background-color: #dddddd;
+}
+
+/* ----------------- HEADER ----------------- */
+
+header{
+    overflow: hidden;
+    background: url('img/principal-4.2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+header h1{
+    text-align: center;
+    margin: 300px;
+
+    color: white;
+    font-size: 3em;
+}
+header img{
+    position: fixed;
+    width: 100%;
+    filter: brightness(.5);
+    margin-bottom: 150px;
+}
+
+/* ----------------- STOCK ----------------- */
+
+nav{
+    width: 70%;
+    margin: 0 15%;
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+#stock{
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 90px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.producto{
+    text-align: center;
+    width: 27%;
+}
+#stock img{
+    transition: 0.1s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+#stock img:hover{
+    transition: 0.1s;
+    transform: scale(1.08);
+}
+#stock{
+    line-height: 0.8em;
+}
+#stock p{
+    font-size: 1em;
+}

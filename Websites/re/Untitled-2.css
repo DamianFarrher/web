@@ -1,0 +1,234 @@
+/* --------------------------- GENERAL --------------------------- */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+
+header{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+    cursor: default;
+    background: rgba(0, 0, 0, 0.9)
+}
+header h1, header a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* LOGO EMPRESA */
+.logo-empresa{
+    float: left;
+    padding: 10px 50px;
+}
+
+/* HEADER LINKS */
+.header-links{
+    display: block;
+    float: right;
+}
+.header-links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 50px;
+    
+}
+.header-links ul li{
+    display: inline-block;
+    margin: 0;
+}
+.header-links ul li a{
+    position: relative;
+    display: block;
+    line-height: 100px;
+    padding: 0 15px;
+    z-index: 2;
+}
+
+
+.header-links ul li div{
+    position: relative;
+    width: 100px;
+    z-index: 1;
+    
+    transition: 0.15s;
+    position: relative;
+    background-color: rgba(100, 100, 100, 0.8);
+    height: 0;
+    width: 100px;
+    z-index: 1;
+}
+
+.header-links ul li:hover div{
+    transition: 0.15s;
+    height: 10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+/*
+header a:hover{
+    background: rgba(100, 100, 100, 0.8);
+}
+
+
+
+/* --------------------------- NAVEGACION --------------------------- */
+
+#fondo-de-inicio{
+    background: url('img-1.jpg');
+    background-attachment: fixed;
+    background-position: 0 200%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+#fondo-de-inicio input{
+    transition: 0.2s;
+
+    margin-top: 300px;
+
+    padding: 10px;
+    width: 25%;
+
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    outline: none;
+
+    color: white;
+    font-size: 1.15em;
+}
+#fondo-de-inicio input:hover{
+    transition: 0.2s;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(0, 0, 0, 0.25);
+}
+#fondo-de-inicio input:focus{
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    width: 50%;
+}
+#fondo-de-inicio input::placeholder{
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+
+.catalogo{
+    background: rgb(17, 17, 17);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.catalogo h1{
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.productos{
+    display: flex;
+    justify-content: center;
+}
+.producto{
+    position: relative;
+    z-index: 0;
+    margin: 0 1.4%;
+    transition: 0.2s;
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.producto img{
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+.producto div{
+    transition: 0.3s;
+    width: fit-content;
+    color: rgba(255, 255, 255, 0);
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* cuando pasa el cursor por los productos */
+.producto:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    /* transform: scale(1.03, 1.03); */
+}
+.producto:hover img{
+    transition: 0.1s;
+    filter: brightness(0.6) blur(4px);
+    transform: scale(1.1);
+    z-index: 0;
+}
+.producto:hover div{
+    transition: 0.7s;
+    color: rgb(255, 255, 255)
+}
+
+
+#parrafos{
+    width: 70%;
+    margin: auto;
+
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+    padding-bottom: 120px;
+}
+#acerca-de{
+    padding-top: 120px;
+}
+
+
+/* --------------------------- FOOTER --------------------------- */
+
+footer{
+    background: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    padding-bottom: 50px; 
+}
+footer p{
+    margin: 0;
+}
+footer a{
+    color: white;
+}
