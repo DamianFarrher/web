@@ -1,0 +1,266 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+
+/* ------------------------------HEADER------------------------------ */
+header{
+    position: fixed;
+    z-index: 10;
+
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #4e4e4c;
+}
+header div{
+    width: 1000px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+header a{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 5em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+
+    transition: 0.2s;
+}
+header a:hover{
+    color: #889EAF;
+}
+.page-selected{
+    color: white;
+
+}
+
+
+/* ------------------------------SECTION 1------------------------------ */
+section{
+    width: 1000px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+#img1{
+    margin-top: 5em;
+    height: 600px;
+    border: 1px solid rgba(0,0,0,0);
+    
+    background: url('imgs/img2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#block-img1{
+    text-align: center;
+
+    margin: 300px 0 0 50%;
+    padding: 25px 50px 55px 50px;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#block-img1 h1{
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #312923;
+}
+#block-img1 a{
+    transition: 0.2s;
+
+    text-decoration: none;
+    color: white;
+    background-color: #312923;
+
+    padding: 15px;
+}
+#block-img1 a:hover{
+    background-color: #ffffff;
+    color: #312923;
+}
+
+#free-shipping{
+    display: inline-block;
+    width: 100%;
+    line-height: 3em;
+    background-color: rgb(218, 218, 218);
+    color: #555;
+    text-align: center;
+    letter-spacing: 0.65em;
+    font-size: 0.8em;
+}
+
+/* ------------------------------SECTION 2------------------------------ */
+
+#titles{
+    color: #312923;
+    text-align: center;
+    padding: 100px 0;
+}
+#titles h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+}
+#titles hr{
+    width: 50px;
+    height: 1px;
+    border: 0;
+    background-color: #312923;
+}
+#titles h2{
+    font-weight: lighter;
+    font-size: 1.3em;
+    letter-spacing: 0.5em;
+}
+
+/* ------------------------------CARDS------------------------------ */
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.card{
+    width: 30%;
+    height: 400px;
+    margin: 0 10px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+.card .img{
+    transition: 1s;
+    height: 350px;
+    width: 70%;
+    margin: 0 15%;
+}
+.card:hover .img{
+    width: 80%;
+    margin: 0 10%;
+}
+.card .text{
+    transition: 1s;
+    display: inline-block;
+    line-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    background-color: #353331;
+    color: white;
+}
+.card:hover .text{
+    background-color: #506D84;
+}
+#sale{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(246, 246, 246);
+    color: #312923;
+    font-weight: bolder;
+    font-size: 2.5em;
+    transform: translate(0, -10px);
+}
+.card:hover #sale{
+    color: #6b594c;
+}
+
+.card span{
+    transition: 0.5s;
+    display: block;
+}
+.card:hover span{
+    transform: translate(0, -50px);
+}
+
+
+/* ------------------------------FOOTER------------------------------ */
+
+footer{
+    width: 100%;
+    background-color: #353331;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+footer section{
+    display: flex;
+    justify-content: space-between;
+}
+footer section:first-child{
+    padding-bottom: 50px;
+}
+footer div{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+footer h3{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    margin: 30px 0;
+}
+
+footer input{
+    transition: 0.25s;
+    outline:none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2px 0;
+    padding: 0 10px;
+
+    border: 2px solid rgba(255,255,255,0);
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255,255,255,0.3);
+    height: 30px;
+}
+footer textarea{
+    outline:none;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    border: 2px solid rgba(255,255,255,0);
+    margin: 2px 0 0 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.6);
+}
+footer input::placeholder, footer textarea::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+footer input:focus, footer textarea:focus{
+    border: 2px solid rgba(255,255,255,0.3);
+    outline:none;
+}
+footer input:last-child{
+    background: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    color: #353331;
+    cursor: pointer;
+}
+footer input:last-child:hover{
+    background: rgba(255, 255, 255);
+}
+footer input:last-child:focus{
+    transition: 0s;
+    background: rgba(255, 255, 255, 0.6);
+}
+section:last-child span{
+    margin-top: 0;
+    padding-bottom: 100px;
+}
+section:last-child span{
+    text-align: center;
+    width: 100%;
+}
