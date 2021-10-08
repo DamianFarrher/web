@@ -1,0 +1,103 @@
+/*
+body{
+
+    background: url('img/mesa.png');
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat;
+}
+*/
+
+.JUEGO{
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    background: url('img/mesa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#p1 img, #p2 img, #p3 img, #p4 img{
+    width: 20%;
+}
+
+
+#mazo{
+    position: absolute;
+    top: 50px;
+    left:1000px;
+    width: 70px;
+    cursor: pointer;
+}
+
+
+
+.dealer{
+    position: relative;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%);
+    
+    border: 2px solid red;
+    width: 400px;
+    height: 100px;
+}
+
+#p1{
+    position: relative;
+    top: 95px;
+    left: 95px;
+    transform: rotate(21deg);
+
+    border: 2px solid red;
+    width: 20%;
+    height: 100px;
+}
+
+#p2{
+    position: relative;
+    top: 50px;
+    left: 380px;
+    transform: rotate(7deg);
+
+    border: 2px solid red;
+    width: 20%;
+    height: 100px;
+}
+
+#p3{
+    position: relative;
+    top: -60px;
+    left: 660px;
+    transform: rotate(-10deg);
+
+    border: 2px solid red;
+    width: 20%;
+    height: 100px;
+}
+
+#p4{
+    position: relative;
+    left: 920px;
+    top: -250px;
+    transform: rotate(-25deg);
+
+    border: 2px solid red;
+    width: 20%;
+    height: 100px;
+}
+
+
+#ap1{
+    width: 90px;
+    height: 120px;
+
+    position: absolute;
+    top: 318px;
+    left: 188px;
+    transform: rotate(22deg);
+
+    border: 1px solid blue;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="BJ-1.css">
+</head>
+<body>
+
+    <header>
+        <h1>BLACKJACK</h1>
+    </header>
+
+
+    <div class="container">
+
+        <!----------------------------------- BOTON PRINCIPAL -----------------------------------> 
+
+        <div class="flex-row-1">
+            <button class="btn btn-outline-dark btn-lg btn-block" id="game_manager" onclick="empezar_juego()" style="cursor: default;" disabled> Repartir</button>
+        </div>
+
+        <!---------------------------------------- JUEGO ----------------------------------------> 
+
+        <div class="flex-row-2">
+            
+            <div id="dealer-box">
+                <h4>DELAER : <span id="dealer-result">0</span></h4>
+            </div>
+            
+            <div id="p1-box">
+                <h4 id="p1-h4"> 
+                    <input type="text" class="form-control" placeholder="Player 1" id="nombre-player1">
+                    
+                </h4>
+
+                <button class="btn btn-outline-danger",   id="p1-menos"   style="cursor: default;" onclick="menos_apuesta('player1')" >-</button>
+                <button class="btn btn-info",             id="player1"    style="cursor: default;" onclick="entrar(this)"             >0</button>
+                <button class="btn btn-outline-success",  id="p1-mas"     style="cursor: default;" onclick="mas_apuesta('player1')"   >+</button>
+
+            </div>
+
+            <div id="p2-box">
+                <h4 id="p2-h4">
+                    <input type="text" class="form-control" placeholder="Player 2" id="nombre-player2">
+                </h4>
+                <button class="btn btn-outline-danger",   id="p2-menos"   style="cursor: default;" onclick="menos_apuesta('player2')" >-</button>
+                <button class="btn btn-info",             id="player2"    style="cursor: default;" onclick="entrar(this)"             >0</button>
+                <button class="btn btn-outline-success",  id="p2-mas"     style="cursor: default;" onclick="mas_apuesta('player2')"   >+</button>
+            </div>
+
+            <div id="p3-box">
+                <h4 id="p3-h4">
+                    <input type="text" class="form-control" placeholder="Player 3" id="nombre-player3">
+                </h4>
+                <button class="btn btn-outline-danger",   id="p3-menos"   style="cursor: default;" onclick="menos_apuesta('player3')" >-</button>
+                <button class="btn btn-info",             id="player3"    style="cursor: default;" onclick="entrar(this)"             >0</button>
+                <button class="btn btn-outline-success",  id="p3-mas"     style="cursor: default;" onclick="mas_apuesta('player3')"   >+</button>
+            </div>
+
+            <div id="p4-box">
+                <h4 id="p4-h4">
+                    <input type="text" class="form-control" placeholder="Player 4" id="nombre-player4">
+                </h4>
+                <button class="btn btn-outline-danger",   id="p4-menos"   style="cursor: default;" onclick="menos_apuesta('player4')" >-</button>
+                <button class="btn btn-info",             id="player4"    style="cursor: default;" onclick="entrar(this)"             >0</button>
+                <button class="btn btn-outline-success",  id="p4-mas"     style="cursor: default;" onclick="mas_apuesta('player4')"   >+</button>
+            </div>
+        </div>
+
+        <!----------------------------------- JUGADAS Y PUNTOS ----------------------------------> 
+
+        <div class="flex-row-3">
+            <div class="div-1">
+                <div class="div-2">
+                    <button class="btn btn-outline-light" id="bt-pedir" disabled onclick="pedir()" style="cursor: default;">Pedir</button>
+                    <button class="btn btn-outline-light" id="bt-pasar" disabled onclick="pasar()" style="cursor: default;">Pasar</button>
+                </div>
+
+                <div class="div-2">
+                    <button class="btn btn-outline-light" id="bt-doblar"  disabled onclick="doblar()"  style="cursor: default;">Doblar </button>
+                    <button class="btn btn-outline-light" id="bt-dividir" disabled onclick="dividir()" style="cursor: default;">Dividir</button>
+                    <button class="btn btn-outline-light" id="bt-seguro"  disabled onclick="seguro()"  style="cursor: default;">Seguro </button>
+                </div>
+            </div>
+
+            <div class="div-1">
+                <table>
+                    <tr>
+                        <th>Jug 1</th>
+                        <th>Jug 2</th>
+                        <th>Jug 3</th>
+                        <th>Jug 4</th>
+                    </tr>
+                    <tr>
+                        <td> <span id="fichas-jug1"> 100 </span> </td>
+                        <td> <span id="fichas-jug2"> 100 </span> </td>
+                        <td> <span id="fichas-jug3"> 100 </span> </td>
+                        <td> <span id="fichas-jug4"> 100 </span> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="BJ-1.js"></script>
+</body>
+</html>
+

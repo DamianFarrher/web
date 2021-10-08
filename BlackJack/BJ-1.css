@@ -1,0 +1,103 @@
+/* -------------------------------- UNIVERSAL -------------------------------- */
+
+header{
+    text-align: center;
+    padding: 50px;
+}
+
+h1{
+    width: 100%;
+}
+
+.flex-row-2, .flex-row-3{
+    background: url('https://ie2-gfebf.cdnppb.net/mexchangeblackjack/turbo/32/assets/gameView/tableBackground.png?v32') center;
+    color: white;
+}
+
+.container, .flex-row-1, .flex-row-2, .flex-row-3{
+    border: 0px solid black;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    padding: 18px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button{
+    width: 100px;
+}
+
+.red{ color: tomato; }
+.blue{ color: rgb(56, 175, 230); }
+.gold{ color: gold; }
+
+.playing{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+img{
+    width: 26%;
+    padding: 3px;
+}
+
+/* ---------------------------------- ROW 2 ---------------------------------- */
+
+.flex-row-2 div{
+    height: 450px;
+}
+
+#dealer-box{
+    height: 170px;
+    width: 100%;
+    border: 0px solid red;
+}
+
+#dealer-box img{
+    width: 10%;
+    padding: 3px;
+}
+
+#p1-box, #p2-box, #p3-box, #p4-box{
+    width: 25%;
+}
+
+
+#p1-menos, #p1-mas, #p2-menos, #p2-mas, #p3-menos, #p3-mas, #p4-menos, #p4-mas{
+    width: 40px;
+}
+#player1, #player2, #player3, #player4{
+    width: 80px;
+}
+
+
+
+/* ---------------------------------- ROW 3 ---------------------------------- */
+
+
+.div-1{
+    border: 0px solid red;
+    width: 50%;
+    padding: 2px;
+}
+.div-2{
+    padding: 2px;
+}
+
+
+table th, table td{
+    padding: 2px;
+    border: 1px solid white;
+    text-align: center;
+    width: 75px;
+}
+table th{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+table td{
+    background-color: rgba(0, 0, 0, 0.25);
+}
