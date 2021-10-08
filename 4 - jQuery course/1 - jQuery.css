@@ -1,0 +1,71 @@
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+    font-size: x-large;
+}
+
+
+#div6 {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid blue;
+    background-color: red;
+    color: white;
+}
+
+
+#DIV{
+    cursor: default;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+}
+#DIV p{
+    width: 100%;
+}
+#DIV div{
+    width: 50px;
+    height: 150px;
+}
+#DIV #div1{
+    background-color: cornflowerblue;
+}
+#DIV #div2{
+    background-color: tan;
+}
+#DIV #div3{
+    background-color: aquamarine;
+}
+
+
+#anim{
+    width: 300px; 
+    border: 1px solid black;
+    cursor: pointer;    
+}
+
+#div-{
+    background-color: tomato; 
+    cursor: pointer;
+
+    position: absolute;
+
+    padding: 30px;
+    width: 75px;
+}
+
+
+#item{
+    cursor: pointer;
+}
+#submenu{
+    background-color: rgba(0, 191, 255, 0.137);
+}
