@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+/* --------------- HEADER --------------- */
+header{
+    background: black;
+    
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    transition: 0.25s;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    cursor: pointer;
+}
+img:hover{
+    transition: 0.25s;
+    padding-left: 25px;
+}
+img:active{
+    transform: scale(0.9);
+}
+h1{
+    margin-right: 50%;
+    transform: translate(50%);
+    color: white;
+}
+
+/* --------------- NAVIGATOR --------------- */
+nav{
+    transition: 0.35s;
+    left: -20%;
+    position: fixed;
+    background: #555555;
+    height: 100%;
+    width: 20%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+li{
+    position: relative;
+    margin-left: 0;
+    display: block;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+/* --- SIN ANIMACION --- */
+li:hover{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+
+/* --- CON ANIMACION --- 
+li:hover div{
+    transition: 0.2s;
+    width: 100%;
+}
+*/
+
+
+a{
+    position: relative;
+    color: white;
+    text-decoration: none;   
+}
+div{
+    transition: 0.3s;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+    width: 0px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.open{
+    transition: 0.35s;
+    left: 0%;
+}
+

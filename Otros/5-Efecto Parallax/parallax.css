@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('fondo.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(6, 12, 39);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contenedor h1{
+    transition: 0.5s;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    
+    margin-top: 150px;
+    margin-bottom: 35px;
+    text-shadow: 0 0 20px rgb(0, 0, 0, .0);
+}
+
+
+.contenedor h3{
+    transition: 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 1.3em;
+
+    margin-bottom: 400px;
+}
+
+article{
+    background: rgba(10, 20, 35, 0.9);
+    padding: 30px;
+    margin: 30px 0;
+    color: white;
+    box-shadow: 0 5px 5px 3px rgba(0, 0, 0, .25);
+    border-radius: 15px;
+}
+
+article hr{
+    background: rgb(25, 65, 115);
+    height: 5px;
+    border: none;
+}
+
+article p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+article h2, article p, article hr{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

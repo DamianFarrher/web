@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+        #sitio{
+            padding: 5rem;
+            font-size: 5rem;
+            margin-left: 15rem;
+        }
+    </style>
+</head>
+<body>
+
+    <input class="jscolor {onFineChange:'update(this)'}" value="cc66ff">
+
+    <div id="sitio">
+        Mi sitio web
+    </div>
+
+    <script src="jscolor.js"></script> 
+    <script src="https://unpkg.com/brain.js"></script>
+    
+    <script type="text/javascript">
+
+        //Red neuronal
+        var network = new brain.NeuralNetwork()
+
+        network.train([
+            //fondo negro (entradas = 0) = texto blanco (salida = 1)
+            {input: {rojo:0, verde:0, azul:0}, output: {color:1}},
+            //fondo blanco (entradas = 1) = texto negro (salida = 0)
+            {input: {rojo:1, verde:1, azul:1}, output: {color:0}},
+            //fondo rojo = texto blanco
+            {input: {rojo:1, verde:0, azul:0}, output: {color:1}},
+            //fondo verde = texto negro
+            {input: {rojo:0, verde:1, azul:0}, output: {color:0}},
+            //fondo azul = texto blanco
+            {input: {rojo:0, verde:.43, azul:1}, output: {color:1}}
+        ])
+
+        //cambiar el color de la ventana
+        function update(color){
+            var div = document.getElementById('sitio');
+            div.style.background = `#${color}`
+
+            //predecir color de texto
+            var entrada = {
+                rojo: color.rgb[0]/255,
+                verde: color.rgb[1]/255,
+                azul: color.rgb[2]/255
+            }
+            var resultado = network.run(entrada)
+
+            if (resultado.color > .5) div.style.color = 'white'
+            else div.style.color = 'black'
+        }
+    </script>
+</body>
+</html>

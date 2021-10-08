@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin: auto;
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+.nav > li{
+    float: left;
+}
+.nav a{
+    display: block;
+    padding: 10px 0;
+    width: 120px;
+    
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: #666666;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li{
+    position: relative;
+}
+.nav li ul li ul{
+    top: 0;
+    left: 120px;
+}

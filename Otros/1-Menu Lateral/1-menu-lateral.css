@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Work+Sans:wght@500&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: default;
+}
+
+/* ------------------------HEADER------------------------ */
+.header{
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 12px;
+    color: white;
+}
+
+.icon-menu{
+    margin: 5px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: rgb(100, 165, 255);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.nav{
+    position: absolute;
+    text-align: right;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    margin-left: auto;
+    justify-content: right;
+    transition: all 0.4s;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.menu_link .menuLink{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background: rgb(100, 165, 255);
+}
+
+.menu_link:hover .menuLink{
+    background: white;
+    color: black;
+}
+
+.show{
+    left:0;
+}
+
+/* ------------------------BANNER------------------------ */
+
+.banner_img {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    width: 100%;
+}
+
+.contenedor- {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-250%);
+    color: white;
+    
+}
+
+
+
+.banner_txt {
+    display: none;
+}

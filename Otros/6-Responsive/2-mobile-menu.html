@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="2-mobile-menu.css">
+</head>
+<body>
+
+    
+    <header>
+        <img id="menu" src="menu.png" alt="">
+        <ul>
+            <li>Inicio</li>
+            <li>Productos</li>
+            <li>Sucursales</li>
+            <li>Acerca de</li>
+            <li>Contacto</li>
+            <li>Iniciar sesión</li>
+        </ul>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Sucursales</a></li>
+            <li><a href="">Acerca de</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        $(document).ready(function(){
+            $('#menu').click(function(){
+                $('nav').toggleClass('open')
+            })
+        })
+    </script>
+    
+</body>
+</html>

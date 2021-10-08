@@ -1,0 +1,96 @@
+
+.btn-1{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    margin: 3px;
+    width: 200px;
+    height: 50px;
+}
+.btn-1 span{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 25px;
+    z-index: 1;
+}
+.btn-1 div{
+    transition: 0.25s;
+    position: absolute;
+    background-color: gold;
+    width: 5px;
+    height: 100%;
+    z-index: 0;
+}
+.btn-1:hover div{
+    transition: 0.25s;
+    width: 100%;
+}
+
+/*----------------------------------*/
+
+.btn-2{
+    cursor: pointer;
+    transition: 0.15s;
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    margin: 5px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+}
+.btn-2 span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.btn-2:hover {
+    transition: 0.15s;
+    background-color: gainsboro;
+}
+
+/*----------------------------------*/
+
+#btns3{
+    display: flex;
+}
+.btn-3{
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    margin: 50px 0 50px 100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 40px;
+    box-shadow: 0 0 50px 0 #ddd;
+}
+.btn-3:hover {
+    transition: 1s;
+    transform: scale(0.9);
+    box-shadow: 0 0 5px -5px #aaa;
+}
+
+/*----------------------------------*/
+
+.fotos{
+    width: 40%;
+}
+.fotos img{
+    transition: 0.15s;
+    margin: 3px;
+    width: 150px;
+}
+.fotos img:hover{
+    transition: 0.15s;
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+/*----------------------------------*/

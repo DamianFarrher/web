@@ -1,0 +1,39 @@
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;  /* depende de cuantas imagenes, como acá son 4 entonces 400% */
+
+    animation: cambio 20s infinite;  /* si agregamos 'alternative', cuando la animacion termina vuelve del final al inicio */
+}
+
+.slider li{
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+
+@keyframes cambio{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+
+    100% { margin-left: 0; }
+}
+
